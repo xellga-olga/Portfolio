@@ -1,14 +1,14 @@
-
-import './App.css'
+import "./App.css";
+import Hero from "./sections/Hero/Hero";
+import Projects from "./sections/Projects/Projects";
 
 function App() {
-
-
   return (
     <>
-    <h2>Hello</h2>
+      <Hero />
+      <Projects />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

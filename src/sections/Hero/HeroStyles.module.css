@@ -1,0 +1,58 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   gap: 20px;
+   height: 100dvh;
+   min-height: 500px;
+
+   .hero {
+      border-radius: 50%; 
+      object-fit: cover; 
+      max-width: 200px;
+   }
+   
+   span {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+   }
+   
+   a {
+      margin: 0;
+
+      img {
+         width: 30px;
+      }
+   }
+
+   a {
+      width: fit-content;
+      align-self: center;
+   }
+}
+
+.colorModeContainer {
+   position: relative;
+}
+
+.colorMode {
+   position: absolute;
+   right: 0;
+   width: 25px;
+}
+
+.colorMode:hover {
+   cursor: pointer;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.description {
+   max-width: 46ch;
+}
