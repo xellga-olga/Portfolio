@@ -31,7 +31,7 @@ const Hero = () => {
         <h1>
           Olha
           <br />
-          Noskina-Plakhotnikova
+          Plakhotnikova
         </h1>
         <h2>Frontend Developer</h2>
         <span>

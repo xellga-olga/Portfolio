@@ -1,0 +1,37 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+   img {
+      max-width: 200px;
+      align-self: center;
+      background-color: var(--project-card-bg);
+      border-radius: 20px;
+   }
+
+   a {
+      width: 200px;
+      /* width: fit-content; */
+      color: #222;
+      text-decoration: none;
+      transition: transform 200ms ease-in-out;
+   }
+
+   a:hover {
+      transform: scale(1.05);
+   }
+
+   .projectContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+
+   
+}
+
