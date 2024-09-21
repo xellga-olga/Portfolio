@@ -1,27 +1,21 @@
 :root {
-  --background-color: #fff;
-  --btn-color: #0987f2;
-  --btn-text-color: #fff;
-  /* --project-card-bg: #151515ba; */
+  --background-color: #fafafa;
+  --btn-color: #b8b8b8;
+  --btn-text-color: #636363;
+  --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
 }
 
 [data-theme="dark"] {
-  --background-color: #585858;
-  --btn-color: #ff9800;
-  --btn-text-color: #fff;
-  --project-card-bg: #ededed;
-  --text-color: #e0e0e0;
-  --form-text-color: #b0b0b0;
-  --footer-text-color: #aaa;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  --background-color: #222;
+  --btn-color: #fff;
+  --btn-text-color: #222;
+  --project-card-bg: #fff;
+  --text-color: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
 }
 
 body {
@@ -29,6 +23,12 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto 60px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 h1,
@@ -43,8 +43,7 @@ p {
 h2,
 h3,
 p {
-  padding: 10px;
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 h1,
@@ -52,9 +51,14 @@ h2 {
   text-transform: uppercase;
 }
 
+h2,
+h3 {
+  font-size: 20px;
+}
+
 h1 {
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
-  font-family: 'Rubik', sans-serif;
 }
 
 p {
@@ -63,9 +67,50 @@ p {
 }
 
 .sectionTitle {
+  text-align: center;
   margin-bottom: 30px;
 }
 
 .hover {
   cursor: pointer;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+@media (width >= 800px) {
+  #root {
+    gap: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media (width >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+
+    .sectionTitle {
+      text-align: center;
+      margin-bottom: 75px;
+    }
+  }
 }
