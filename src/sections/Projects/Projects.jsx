@@ -27,9 +27,9 @@ const projects = [
   },
   {
     title: "E-Commerce",
-    description: "E-commerce website using React, React Router, Auth0, and React Icons.",
+    description: "Web application using React JS and Tailwind CSS.",
     image: ECommerce,
-    link: "https://e-commerce-five-cyan-40.vercel.app/",
+    link: "https://e-commerce-inly.vercel.app/",
   },
 ];
 
